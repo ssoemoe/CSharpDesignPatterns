@@ -7,7 +7,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            FactoryMethod.TestFactoryMethodDesignPattern();
+            AbstractFactory.TestAbstractFactory();
             Console.ReadKey();
         }
     }
