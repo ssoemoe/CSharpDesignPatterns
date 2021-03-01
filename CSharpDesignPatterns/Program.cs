@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpDesignPatterns.Creational_Patterns;
+using System;
 
 namespace CSharpDesignPatterns
 {
@@ -6,7 +7,8 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FactoryMethod.TestFactoryMethodDesignPattern();
+            Console.ReadKey();
         }
     }
 }
