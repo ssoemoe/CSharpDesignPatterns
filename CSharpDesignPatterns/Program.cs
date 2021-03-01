@@ -7,7 +7,8 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            AbstractFactory.TestAbstractFactory();
+            var singleton = Singleton.Instance;
+            Console.WriteLine(singleton);
             Console.ReadKey();
         }
     }
