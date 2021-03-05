@@ -7,8 +7,8 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            var singleton = Singleton.Instance;
-            Console.WriteLine(singleton);
+            Builder.BuildGetRequest();
+            Builder.BuildPostRequest();
             Console.ReadKey();
         }
     }
