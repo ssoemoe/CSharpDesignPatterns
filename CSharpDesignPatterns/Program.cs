@@ -10,6 +10,8 @@ namespace CSharpDesignPatterns
         {
             var singleton = Singleton.Instance;
             Console.WriteLine(singleton.ToString());
+            var lazySingleton = LazySingleton.Instance;
+            Console.WriteLine(lazySingleton.ToString());
             Console.ReadKey();
         }
     }

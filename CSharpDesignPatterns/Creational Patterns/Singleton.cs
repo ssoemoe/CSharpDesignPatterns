@@ -1,4 +1,5 @@
-﻿/// <summary>
+﻿using System;
+/// <summary>
 /// Singleton pattern is used when only one instance is good enought and can be shared across the application.
 /// Consider thread-safety for singleton instance
 /// Preferrably use "sealed" modifier to prevent inheritance in other classes.
@@ -29,6 +30,28 @@ namespace CSharpDesignPatterns.Creational_Patterns
         public override string ToString()
         {
             return "Singleton is working!";
+        }
+    }
+
+    // Lazy instantiation of singleton class
+    public sealed class LazySingleton
+    {
+        private static readonly Lazy<LazySingleton> lazySingletonInstance = new Lazy<LazySingleton>(() => new LazySingleton());
+        public static LazySingleton Instance
+        {
+            get
+            {
+                return lazySingletonInstance.Value;
+            }
+        }
+        private LazySingleton()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return "This is lazy singleton";
         }
     }
 }
