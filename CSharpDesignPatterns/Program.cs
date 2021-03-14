@@ -1,4 +1,5 @@
-﻿using CSharpDesignPatterns.StructuralPatterns;
+﻿using CSharpDesignPatterns.Creational_Patterns;
+using CSharpDesignPatterns.StructuralPatterns;
 using System;
 
 namespace CSharpDesignPatterns
@@ -7,7 +8,8 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            Decorator.DecoratorPatternTest();
+            var singleton = Singleton.Instance;
+            Console.WriteLine(singleton.ToString());
             Console.ReadKey();
         }
     }
