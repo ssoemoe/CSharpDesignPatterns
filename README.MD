@@ -11,6 +11,7 @@ Some of the design patterns (such as Adapter design pattern) are less relevant f
 ## Structural Design Patterns  
 1. Decorator - used as an alternative for subclassing/inheritance when inhertiance heirarchy becomes complicated and needs multiple layers.   
 2. Adapter - used to make two incompatible systems work together. There are two types of adapter design patterns - object adapter and class adapter design patterns.   
+3. Facade - executes the methods of multiple subsystems. Facade class is just an executor class of multiple systems for the client.  
 
 ## Misc Design Patterns  
 Other than the above 23 design patterns, there are some useful misc design patterns in OOP.  

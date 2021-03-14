@@ -9,7 +9,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            ObjectAdapter.TestDesign();
+            Facade.TestDesign();
             Console.ReadKey();
         }
     }
