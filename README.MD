@@ -1,5 +1,6 @@
 # C# Design Patterns  
-Practicing 23 Gang of Four object oriented design patterns.     
+Practicing 23 Gang of Four object oriented design patterns.   
+Some of the design patterns (such as Adapter design pattern) are less relevant for web applications which do not need adapters.         
 ## Creational Design Patterns   
 1. Factory Method  - conditionally produces an object using polymorphism   
 2. Abstract Factory Method - includes multiple factory methods in an abstract class  
@@ -8,7 +9,8 @@ Practicing 23 Gang of Four object oriented design patterns.
 5. Prototype - A prototype (a new instance with the same properties) can be easily created (can be done with ICloneable interface) without affecting the original object when changes are made to the cloned object.   
 
 ## Structural Design Patterns  
-1. Decoration Pattern - used as an alternative for subclassing/inheritance when inhertiance heirarchy becomes complicated and needs multiple layers.
+1. Decorator - used as an alternative for subclassing/inheritance when inhertiance heirarchy becomes complicated and needs multiple layers.   
+2. Adapter - used to make two incompatible systems work together. There are two types of adapter design patterns - object adapter and class adapter design patterns.   
 
 ## Misc Design Patterns  
 Other than the above 23 design patterns, there are some useful misc design patterns in OOP.  
