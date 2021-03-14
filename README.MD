@@ -2,7 +2,7 @@
 
 # Gang of Four 23 Design Patterns  
 Practicing 23 Gang of Four object oriented design patterns.   
-Some of the design patterns (such as Adapter design pattern) are less relevant for modern web applications which need few adapters.            
+Some of the design patterns (such as Adapter design pattern) are less relevant for modern web applications.   
 ## Creational Design Patterns   
 1. Factory Method  - conditionally produces an object using polymorphism   
 2. Abstract Factory Method - includes multiple factory methods in an abstract class  
