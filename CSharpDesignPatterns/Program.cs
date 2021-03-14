@@ -9,7 +9,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            FluentInterfaceDesign.TestDesign();
+            Prototype.TestDesign();
             Console.ReadKey();
         }
     }
