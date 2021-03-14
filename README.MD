@@ -9,3 +9,7 @@ Practicing 23 Gang of Four object oriented design patterns.
 
 ## Structural Design Patterns  
 1. Decoration Pattern - used as an alternative for subclassing/inheritance when inhertiance heirarchy becomes complicated and needs multiple layers.
+
+## Misc Design Patterns  
+Other than the above 23 design patterns, there are some useful misc design patterns in OOP.  
+1. Fluent interface design - Method chaining is the most popular. The design is also used in LINQ queries.  
