@@ -1,4 +1,5 @@
 ﻿using CSharpDesignPatterns.Creational_Patterns;
+using CSharpDesignPatterns.Misc;
 using CSharpDesignPatterns.StructuralPatterns;
 using System;
 
@@ -8,10 +9,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            var singleton = Singleton.Instance;
-            Console.WriteLine(singleton.ToString());
-            var lazySingleton = LazySingleton.Instance;
-            Console.WriteLine(lazySingleton.ToString());
+            FluentInterfaceDesign.TestDesign();
             Console.ReadKey();
         }
     }
