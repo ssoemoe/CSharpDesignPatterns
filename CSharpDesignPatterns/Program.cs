@@ -1,4 +1,4 @@
-﻿using CSharpDesignPatterns.Creational_Patterns;
+﻿using CSharpDesignPatterns.StructuralPatterns;
 using System;
 
 namespace CSharpDesignPatterns
@@ -7,8 +7,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            Builder.BuildGetRequest();
-            Builder.BuildPostRequest();
+            Decorator.DecoratorPatternTest();
             Console.ReadKey();
         }
     }

@@ -8,4 +8,4 @@ Practicing 23 Gang of Four object oriented design patterns.
 5. Prototype - A prototype (a new instance with the same properties) can be easily created (can be done with ICloneable interface)   
 
 ## Structural Design Patterns  
-1. COMIN SOON!
+1. Decoration Pattern - used as an alternative for subclassing/inheritance when inhertiance heirarchy becomes complicated and needs multiple layers.
