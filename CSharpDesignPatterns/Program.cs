@@ -9,7 +9,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            Facade.TestDesign();
+            Bridge.TestDesign();
             Console.ReadKey();
         }
     }
