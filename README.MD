@@ -16,6 +16,7 @@ Some of the design patterns (such as Adapter design pattern) are less relevant f
 3. Facade - executes the methods of multiple subsystems. Facade class is just an executor class of multiple systems for the client.   
 4. Bridge - decouples but bridge the abstraction and implementation of classes with different purposes.  
 5. Composite - builds a hierarchy tree which treats each node as a composite object and contains leaves.   
+6. Proxy - proxy means "on behalf of". Three types of proxies - virtual (for expensive object creation. Creates objects only for the first time), remote (local representation for remote addresses) and protection (used for security purposes)   
 
 # Other Popular C# Design Patterns  
 Other than the above 23 design patterns, there are some useful misc design patterns in OOP.  
