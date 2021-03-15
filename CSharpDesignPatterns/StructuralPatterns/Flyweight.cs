@@ -13,12 +13,15 @@ namespace CSharpDesignPatterns.StructuralPatterns
         public static void TestDesign()
         {
             var footballPlayer = SportsmanFactory.GetPlayer("football");
-            footballPlayer.HasSportsmanship = false; //sets extrinsic value
-            footballPlayer.PlaySports();
+            footballPlayer.PlaySports(PlayState.BREAK);
+
+            var footballPlayer2 = SportsmanFactory.GetPlayer("football");
+            footballPlayer2.PlaySports(PlayState.PLAYING);
 
             var cricketPlayer = SportsmanFactory.GetPlayer("cricket");
-            cricketPlayer.HasSportsmanship = true;//sets extrinsic value
-            cricketPlayer.PlaySports();
+            cricketPlayer.PlaySports(PlayState.STOP);
+
+            Console.WriteLine($"Objects count: {SportsmanFactory.GetObjectCount()}");
         }
     }
 
@@ -41,41 +44,50 @@ namespace CSharpDesignPatterns.StructuralPatterns
                 default:
                     return null;
             }
-
         }
+
+        public static int GetObjectCount()
+        {
+            return _cache.Keys.Count;
+        }
+    }
+
+    enum PlayState
+    {
+        BREAK,
+        PLAYING,
+        STOP
     }
 
     abstract class Sportsman
     {
-        public bool HasSportsmanship { get; set; } = true; // extrinsic state
-        public abstract void PlaySports();
+        protected string _sports { get; set; } // intrinsic state
+        // extrinsic state
+        public void PlaySports(PlayState state)
+        {
+            switch (state)
+            {
+                case PlayState.BREAK: Console.WriteLine("Player is taking a break"); break;
+                case PlayState.PLAYING: Console.WriteLine($"Player is playing {_sports} on the field"); break;
+                case PlayState.STOP: Console.WriteLine("Player has stopped playing"); break;
+                default: throw new Exception("Invalid player state");
+            }
+        }
     }
 
     class FootballPlayer : Sportsman
     {
-        private readonly string _sports; // intrinsic state
         public FootballPlayer()
         {
             _sports = "football";
-        }
-
-        public override void PlaySports()
-        {
-            Console.WriteLine($"Plays {_sports}. Does he/she have sportsmanship? {HasSportsmanship}");
         }
     }
 
     class CricketPlayer : Sportsman
     {
-        private readonly string _sports; // intrinsic state
         public CricketPlayer()
         {
             _sports = "cricket";
-        }
-
-        public override void PlaySports()
-        {
-            Console.WriteLine($"Plays {_sports}. Does he/she have sportsmanship? {HasSportsmanship}");
         }
     }
 }
