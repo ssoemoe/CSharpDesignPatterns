@@ -27,7 +27,7 @@ namespace CSharpDesignPatterns.StructuralPatterns
         private static Dictionary<string, Sportsman> _cache = new Dictionary<string, Sportsman>();//cache with dictionary
         public static Sportsman GetPlayer(string sports)
         {
-            // checks if the object with the same intrinsic value already exists
+            // returns the same reference if the object with the same intrinsic value already exists to reduce the number of objects
             if (_cache.ContainsKey(sports))
                 return _cache[sports];
             switch (sports)
