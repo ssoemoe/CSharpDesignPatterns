@@ -9,7 +9,7 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            Bridge.TestDesign();
+            Flyweight.TestDesign();
             Console.ReadKey();
         }
     }
